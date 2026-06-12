@@ -1,0 +1,470 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B00000000000000000000001 /* FixLensARApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000001 /* FixLensARApp.swift */; };
+		B00000000000000000000002 /* AppShellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000002 /* AppShellView.swift */; };
+		B00000000000000000000003 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000003 /* AppRouter.swift */; };
+		B00000000000000000000004 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000004 /* AppTheme.swift */; };
+		B00000000000000000000005 /* FixLensModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000005 /* FixLensModels.swift */; };
+		B00000000000000000000006 /* SafetyPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000006 /* SafetyPolicy.swift */; };
+		B00000000000000000000007 /* AIModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000007 /* AIModels.swift */; };
+		B00000000000000000000008 /* MockAIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000008 /* MockAIService.swift */; };
+		B00000000000000000000009 /* RemoteAIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000009 /* RemoteAIService.swift */; };
+		B0000000000000000000000A /* AppServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0000000000000000000000A /* AppServices.swift */; };
+		B0000000000000000000000B /* SubscriptionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0000000000000000000000B /* SubscriptionStore.swift */; };
+		B0000000000000000000000C /* NotificationScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0000000000000000000000C /* NotificationScheduler.swift */; };
+		B0000000000000000000000D /* PDFReportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0000000000000000000000D /* PDFReportService.swift */; };
+		B0000000000000000000000E /* OCRScannerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0000000000000000000000E /* OCRScannerService.swift */; };
+		B0000000000000000000000F /* SpeechRecognitionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0000000000000000000000F /* SpeechRecognitionService.swift */; };
+		B00000000000000000000010 /* VoiceRecordingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000010 /* VoiceRecordingService.swift */; };
+		B00000000000000000000011 /* WaveformAnimationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000011 /* WaveformAnimationManager.swift */; };
+		B00000000000000000000012 /* AROverlayEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000012 /* AROverlayEngine.swift */; };
+		B00000000000000000000013 /* ARMaintenanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000013 /* ARMaintenanceView.swift */; };
+		B00000000000000000000014 /* PremiumComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000014 /* PremiumComponents.swift */; };
+		B00000000000000000000015 /* FixLensCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000015 /* FixLensCards.swift */; };
+		B00000000000000000000016 /* FixLensWidgetsPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000016 /* FixLensWidgetsPlaceholder.swift */; };
+		B00000000000000000000017 /* FixLensWatchPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000017 /* FixLensWatchPlaceholder.swift */; };
+		B00000000000000000000018 /* FixLensViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000018 /* FixLensViewModels.swift */; };
+		B00000000000000000000019 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000019 /* OnboardingView.swift */; };
+		B0000000000000000000001A /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0000000000000000000001A /* DashboardView.swift */; };
+		B0000000000000000000001B /* ApplianceScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0000000000000000000001B /* ApplianceScannerView.swift */; };
+		B0000000000000000000001C /* ARGuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0000000000000000000001C /* ARGuideView.swift */; };
+		B0000000000000000000001D /* VoiceAssistantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0000000000000000000001D /* VoiceAssistantView.swift */; };
+		B0000000000000000000001E /* MaintenanceGuidesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0000000000000000000001E /* MaintenanceGuidesView.swift */; };
+		B0000000000000000000001F /* TroubleshooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0000000000000000000001F /* TroubleshooterView.swift */; };
+		B00000000000000000000020 /* ErrorCodeScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000020 /* ErrorCodeScannerView.swift */; };
+		B00000000000000000000021 /* ApplianceHealthDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000021 /* ApplianceHealthDashboardView.swift */; };
+		B00000000000000000000022 /* MaintenanceCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000022 /* MaintenanceCalendarView.swift */; };
+		B00000000000000000000023 /* PropertyPortfolioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000023 /* PropertyPortfolioView.swift */; };
+		B00000000000000000000024 /* ReportsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000024 /* ReportsView.swift */; };
+		B00000000000000000000025 /* PaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000025 /* PaywallView.swift */; };
+		B00000000000000000000026 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000026 /* SettingsView.swift */; };
+		B00000000000000000000027 /* ApplianceDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000027 /* ApplianceDetailView.swift */; };
+		B00000000000000000000029 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000029 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A00000000000000000000006 /* FixLensAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FixLensAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F00000000000000000000001 /* FixLensARApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App/FixLensARApp.swift; sourceTree = "<group>"; };
+		F00000000000000000000002 /* AppShellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App/AppShellView.swift; sourceTree = "<group>"; };
+		F00000000000000000000003 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App/AppRouter.swift; sourceTree = "<group>"; };
+		F00000000000000000000004 /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App/AppTheme.swift; sourceTree = "<group>"; };
+		F00000000000000000000005 /* FixLensModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models/FixLensModels.swift; sourceTree = "<group>"; };
+		F00000000000000000000006 /* SafetyPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources/SafetyPolicy.swift; sourceTree = "<group>"; };
+		F00000000000000000000007 /* AIModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/AIModels.swift; sourceTree = "<group>"; };
+		F00000000000000000000008 /* MockAIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/MockAIService.swift; sourceTree = "<group>"; };
+		F00000000000000000000009 /* RemoteAIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/RemoteAIService.swift; sourceTree = "<group>"; };
+		F0000000000000000000000A /* AppServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/AppServices.swift; sourceTree = "<group>"; };
+		F0000000000000000000000B /* SubscriptionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/SubscriptionStore.swift; sourceTree = "<group>"; };
+		F0000000000000000000000C /* NotificationScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/NotificationScheduler.swift; sourceTree = "<group>"; };
+		F0000000000000000000000D /* PDFReportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/PDFReportService.swift; sourceTree = "<group>"; };
+		F0000000000000000000000E /* OCRScannerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRPlaceholder/OCRScannerService.swift; sourceTree = "<group>"; };
+		F0000000000000000000000F /* SpeechRecognitionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Voice/SpeechRecognitionService.swift; sourceTree = "<group>"; };
+		F00000000000000000000010 /* VoiceRecordingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Voice/VoiceRecordingService.swift; sourceTree = "<group>"; };
+		F00000000000000000000011 /* WaveformAnimationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Voice/WaveformAnimationManager.swift; sourceTree = "<group>"; };
+		F00000000000000000000012 /* AROverlayEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARKitEngine/AROverlayEngine.swift; sourceTree = "<group>"; };
+		F00000000000000000000013 /* ARMaintenanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARKitEngine/ARMaintenanceView.swift; sourceTree = "<group>"; };
+		F00000000000000000000014 /* PremiumComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components/PremiumComponents.swift; sourceTree = "<group>"; };
+		F00000000000000000000015 /* FixLensCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components/FixLensCards.swift; sourceTree = "<group>"; };
+		F00000000000000000000016 /* FixLensWidgetsPlaceholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetsPlaceholder/FixLensWidgetsPlaceholder.swift; sourceTree = "<group>"; };
+		F00000000000000000000017 /* FixLensWatchPlaceholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchPlaceholder/FixLensWatchPlaceholder.swift; sourceTree = "<group>"; };
+		F00000000000000000000018 /* FixLensViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModels/FixLensViewModels.swift; sourceTree = "<group>"; };
+		F00000000000000000000019 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/OnboardingView.swift; sourceTree = "<group>"; };
+		F0000000000000000000001A /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/DashboardView.swift; sourceTree = "<group>"; };
+		F0000000000000000000001B /* ApplianceScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/ApplianceScannerView.swift; sourceTree = "<group>"; };
+		F0000000000000000000001C /* ARGuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/ARGuideView.swift; sourceTree = "<group>"; };
+		F0000000000000000000001D /* VoiceAssistantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/VoiceAssistantView.swift; sourceTree = "<group>"; };
+		F0000000000000000000001E /* MaintenanceGuidesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/MaintenanceGuidesView.swift; sourceTree = "<group>"; };
+		F0000000000000000000001F /* TroubleshooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/TroubleshooterView.swift; sourceTree = "<group>"; };
+		F00000000000000000000020 /* ErrorCodeScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/ErrorCodeScannerView.swift; sourceTree = "<group>"; };
+		F00000000000000000000021 /* ApplianceHealthDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/ApplianceHealthDashboardView.swift; sourceTree = "<group>"; };
+		F00000000000000000000022 /* MaintenanceCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/MaintenanceCalendarView.swift; sourceTree = "<group>"; };
+		F00000000000000000000023 /* PropertyPortfolioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/PropertyPortfolioView.swift; sourceTree = "<group>"; };
+		F00000000000000000000024 /* ReportsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/ReportsView.swift; sourceTree = "<group>"; };
+		F00000000000000000000025 /* PaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/PaywallView.swift; sourceTree = "<group>"; };
+		F00000000000000000000026 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/SettingsView.swift; sourceTree = "<group>"; };
+		F00000000000000000000027 /* ApplianceDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/ApplianceDetailView.swift; sourceTree = "<group>"; };
+		F00000000000000000000028 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F00000000000000000000029 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A00000000000000000000008 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A00000000000000000000003 = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000005 /* FixLensAR */,
+				A00000000000000000000004 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A00000000000000000000004 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000006 /* FixLensAR.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A00000000000000000000005 /* FixLensAR */ = {
+			isa = PBXGroup;
+			children = (
+				F00000000000000000000001 /* FixLensARApp.swift */,
+				F00000000000000000000002 /* AppShellView.swift */,
+				F00000000000000000000003 /* AppRouter.swift */,
+				F00000000000000000000004 /* AppTheme.swift */,
+				F00000000000000000000005 /* FixLensModels.swift */,
+				F00000000000000000000006 /* SafetyPolicy.swift */,
+				F00000000000000000000007 /* AIModels.swift */,
+				F00000000000000000000008 /* MockAIService.swift */,
+				F00000000000000000000009 /* RemoteAIService.swift */,
+				F0000000000000000000000A /* AppServices.swift */,
+				F0000000000000000000000B /* SubscriptionStore.swift */,
+				F0000000000000000000000C /* NotificationScheduler.swift */,
+				F0000000000000000000000D /* PDFReportService.swift */,
+				F0000000000000000000000E /* OCRScannerService.swift */,
+				F0000000000000000000000F /* SpeechRecognitionService.swift */,
+				F00000000000000000000010 /* VoiceRecordingService.swift */,
+				F00000000000000000000011 /* WaveformAnimationManager.swift */,
+				F00000000000000000000012 /* AROverlayEngine.swift */,
+				F00000000000000000000013 /* ARMaintenanceView.swift */,
+				F00000000000000000000014 /* PremiumComponents.swift */,
+				F00000000000000000000015 /* FixLensCards.swift */,
+				F00000000000000000000016 /* FixLensWidgetsPlaceholder.swift */,
+				F00000000000000000000017 /* FixLensWatchPlaceholder.swift */,
+				F00000000000000000000018 /* FixLensViewModels.swift */,
+				F00000000000000000000019 /* OnboardingView.swift */,
+				F0000000000000000000001A /* DashboardView.swift */,
+				F0000000000000000000001B /* ApplianceScannerView.swift */,
+				F0000000000000000000001C /* ARGuideView.swift */,
+				F0000000000000000000001D /* VoiceAssistantView.swift */,
+				F0000000000000000000001E /* MaintenanceGuidesView.swift */,
+				F0000000000000000000001F /* TroubleshooterView.swift */,
+				F00000000000000000000020 /* ErrorCodeScannerView.swift */,
+				F00000000000000000000021 /* ApplianceHealthDashboardView.swift */,
+				F00000000000000000000022 /* MaintenanceCalendarView.swift */,
+				F00000000000000000000023 /* PropertyPortfolioView.swift */,
+				F00000000000000000000024 /* ReportsView.swift */,
+				F00000000000000000000025 /* PaywallView.swift */,
+				F00000000000000000000026 /* SettingsView.swift */,
+				F00000000000000000000027 /* ApplianceDetailView.swift */,
+				F00000000000000000000028 /* Info.plist */,
+				F00000000000000000000029 /* Assets.xcassets */,
+			);
+			path = FixLensAR;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A00000000000000000000001 /* FixLensAR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0000000000000000000000B /* Build configuration list for PBXNativeTarget "FixLensAR" */;
+			buildPhases = (
+				A00000000000000000000007 /* Sources */,
+				A00000000000000000000008 /* Frameworks */,
+				A00000000000000000000009 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FixLensAR;
+			productName = FixLensAR;
+			productReference = A00000000000000000000006 /* FixLensAR.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A00000000000000000000002 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					A00000000000000000000001 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = A0000000000000000000000A /* Build configuration list for PBXProject "FixLensAR" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A00000000000000000000003;
+			productRefGroup = A00000000000000000000004 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A00000000000000000000001 /* FixLensAR */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A00000000000000000000009 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B00000000000000000000029 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A00000000000000000000007 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B00000000000000000000001 /* FixLensARApp.swift in Sources */,
+				B00000000000000000000002 /* AppShellView.swift in Sources */,
+				B00000000000000000000003 /* AppRouter.swift in Sources */,
+				B00000000000000000000004 /* AppTheme.swift in Sources */,
+				B00000000000000000000005 /* FixLensModels.swift in Sources */,
+				B00000000000000000000006 /* SafetyPolicy.swift in Sources */,
+				B00000000000000000000007 /* AIModels.swift in Sources */,
+				B00000000000000000000008 /* MockAIService.swift in Sources */,
+				B00000000000000000000009 /* RemoteAIService.swift in Sources */,
+				B0000000000000000000000A /* AppServices.swift in Sources */,
+				B0000000000000000000000B /* SubscriptionStore.swift in Sources */,
+				B0000000000000000000000C /* NotificationScheduler.swift in Sources */,
+				B0000000000000000000000D /* PDFReportService.swift in Sources */,
+				B0000000000000000000000E /* OCRScannerService.swift in Sources */,
+				B0000000000000000000000F /* SpeechRecognitionService.swift in Sources */,
+				B00000000000000000000010 /* VoiceRecordingService.swift in Sources */,
+				B00000000000000000000011 /* WaveformAnimationManager.swift in Sources */,
+				B00000000000000000000012 /* AROverlayEngine.swift in Sources */,
+				B00000000000000000000013 /* ARMaintenanceView.swift in Sources */,
+				B00000000000000000000014 /* PremiumComponents.swift in Sources */,
+				B00000000000000000000015 /* FixLensCards.swift in Sources */,
+				B00000000000000000000016 /* FixLensWidgetsPlaceholder.swift in Sources */,
+				B00000000000000000000017 /* FixLensWatchPlaceholder.swift in Sources */,
+				B00000000000000000000018 /* FixLensViewModels.swift in Sources */,
+				B00000000000000000000019 /* OnboardingView.swift in Sources */,
+				B0000000000000000000001A /* DashboardView.swift in Sources */,
+				B0000000000000000000001B /* ApplianceScannerView.swift in Sources */,
+				B0000000000000000000001C /* ARGuideView.swift in Sources */,
+				B0000000000000000000001D /* VoiceAssistantView.swift in Sources */,
+				B0000000000000000000001E /* MaintenanceGuidesView.swift in Sources */,
+				B0000000000000000000001F /* TroubleshooterView.swift in Sources */,
+				B00000000000000000000020 /* ErrorCodeScannerView.swift in Sources */,
+				B00000000000000000000021 /* ApplianceHealthDashboardView.swift in Sources */,
+				B00000000000000000000022 /* MaintenanceCalendarView.swift in Sources */,
+				B00000000000000000000023 /* PropertyPortfolioView.swift in Sources */,
+				B00000000000000000000024 /* ReportsView.swift in Sources */,
+				B00000000000000000000025 /* PaywallView.swift in Sources */,
+				B00000000000000000000026 /* SettingsView.swift in Sources */,
+				B00000000000000000000027 /* ApplianceDetailView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A0000000000000000000000C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A0000000000000000000000D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A0000000000000000000000E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = FixLensAR/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fixlens.ar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A0000000000000000000000F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = FixLensAR/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fixlens.ar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A0000000000000000000000A /* Build configuration list for PBXProject "FixLensAR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0000000000000000000000C /* Debug */,
+				A0000000000000000000000D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0000000000000000000000B /* Build configuration list for PBXNativeTarget "FixLensAR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0000000000000000000000E /* Debug */,
+				A0000000000000000000000F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A00000000000000000000002 /* Project object */;
+}
