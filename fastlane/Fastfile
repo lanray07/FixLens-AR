@@ -24,13 +24,14 @@ platform :ios do
       in_house: false
     )
 
-    build_settings = {
+    archive_settings = {
       "DEVELOPMENT_TEAM" => team_id,
       "PRODUCT_BUNDLE_IDENTIFIER" => bundle_id,
       "MARKETING_VERSION" => marketing_version,
       "CURRENT_PROJECT_VERSION" => build_number,
       "CODE_SIGN_STYLE" => "Automatic",
-      "CODE_SIGN_IDENTITY" => "Apple Distribution"
+      "CODE_SIGNING_ALLOWED" => "NO",
+      "CODE_SIGNING_REQUIRED" => "NO"
     }.map { |key, value| "#{key}=#{Shellwords.escape(value)}" }.join(" ")
 
     asc_key_dir = Dir.mktmpdir("fixlens-asc-key")
@@ -79,7 +80,7 @@ platform :ios do
         "-destination #{Shellwords.escape("generic/platform=iOS")} " \
         "-archivePath #{Shellwords.escape(archive_path)} " \
         "#{auth_args} " \
-        "#{build_settings} " \
+        "#{archive_settings} " \
         "clean archive"
       )
 
