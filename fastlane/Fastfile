@@ -29,7 +29,8 @@ platform :ios do
       "PRODUCT_BUNDLE_IDENTIFIER" => bundle_id,
       "MARKETING_VERSION" => marketing_version,
       "CURRENT_PROJECT_VERSION" => build_number,
-      "CODE_SIGN_STYLE" => "Automatic"
+      "CODE_SIGN_STYLE" => "Automatic",
+      "CODE_SIGN_IDENTITY" => "Apple Distribution"
     }.map { |key, value| "#{key}=#{Shellwords.escape(value)}" }.join(" ")
 
     asc_key_dir = Dir.mktmpdir("fixlens-asc-key")
