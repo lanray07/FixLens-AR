@@ -16,4 +16,17 @@ The app is built for iOS 17+ with:
 
 Open `FixLensAR.xcodeproj` in Xcode and run the `FixLensAR` scheme on an iOS simulator or device.
 
+## GitHub App Store Upload
+
+The repository includes a manual GitHub Actions workflow, `iOS Upload Build`, that archives the app with Xcode on a macOS runner and uploads the build to App Store Connect.
+
+Required repository secrets:
+
+- `APPLE_TEAM_ID`
+- `APP_STORE_CONNECT_API_KEY_ID`
+- `APP_STORE_CONNECT_API_ISSUER_ID`
+- `APP_STORE_CONNECT_API_PRIVATE_KEY`
+
+Run the workflow from GitHub Actions and keep the marketing version at `1.0` for the current App Store version. If no build number is supplied, the workflow uses the GitHub run number so each upload is unique.
+
 Safety posture: FixLens AR is informational only. It does not certify, replace qualified tradespeople, or instruct users to perform dangerous gas, electrical, high-voltage, or sealed-system repairs.
