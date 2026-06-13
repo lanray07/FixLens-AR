@@ -18,7 +18,7 @@ permissions:
 jobs:
   archive-upload:
     name: Build signed IPA and upload to App Store Connect
-    runs-on: macos-latest
+    runs-on: macos-26
     timeout-minutes: 45
 
     env:
@@ -35,6 +35,16 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Select Xcode 26
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ -d /Applications/Xcode_26.5.app ]; then
+            sudo xcode-select -s /Applications/Xcode_26.5.app/Contents/Developer
+          else
+            sudo xcode-select -s /Applications/Xcode_26.4.1.app/Contents/Developer
+          fi
 
       - name: Show Xcode version
         run: |
