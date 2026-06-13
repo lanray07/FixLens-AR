@@ -9,6 +9,7 @@ xcuserdata/
 # Python tooling
 __pycache__/
 *.pyc
+.gh-run-*/
 
 # macOS
 .DS_Store
