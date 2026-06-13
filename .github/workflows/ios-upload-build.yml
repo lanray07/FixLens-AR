@@ -25,7 +25,7 @@ jobs:
       PROJECT_PATH: FixLensAR.xcodeproj
       SCHEME: FixLensAR
       CONFIGURATION: Release
-      BUNDLE_ID: com.fixlens.ar
+      BUNDLE_ID: com.fixlensar.app
       MARKETING_VERSION: ${{ inputs.marketing_version }}
       APPLE_TEAM_ID: ${{ secrets.APPLE_TEAM_ID }}
       ASC_KEY_ID: ${{ secrets.APP_STORE_CONNECT_API_KEY_ID }}

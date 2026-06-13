@@ -11,7 +11,7 @@ platform :ios do
     project_path = ENV.fetch("PROJECT_PATH", "FixLensAR.xcodeproj")
     scheme = ENV.fetch("SCHEME", "FixLensAR")
     configuration = ENV.fetch("CONFIGURATION", "Release")
-    bundle_id = ENV.fetch("BUNDLE_ID", "com.fixlens.ar")
+    bundle_id = ENV.fetch("BUNDLE_ID", "com.fixlensar.app")
     team_id = ENV.fetch("APPLE_TEAM_ID")
     marketing_version = ENV.fetch("MARKETING_VERSION", "1.0")
     build_number = ENV.fetch("BUILD_NUMBER")
