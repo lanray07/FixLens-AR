@@ -18,7 +18,7 @@ Open `FixLensAR.xcodeproj` in Xcode and run the `FixLensAR` scheme on an iOS sim
 
 ## GitHub App Store Upload
 
-The repository includes a manual GitHub Actions workflow, `iOS Upload Build`, that uses Xcode and Fastlane on a macOS runner to create App Store signing assets, build a signed IPA, and upload the build to App Store Connect/TestFlight.
+The repository includes a manual GitHub Actions workflow, `iOS Upload Build`, that uses Xcode cloud signing and Fastlane on a macOS runner to build a signed IPA and upload it to App Store Connect/TestFlight.
 
 Required repository secrets:
 
