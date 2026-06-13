@@ -22,13 +22,33 @@ platform :ios do
       in_house: false
     )
 
-    setup_ci if ENV["CI"]
+    keychain_password = nil
+    keychain_path = nil
+    if ENV["CI"]
+      keychain_name = "fixlens_upload.keychain"
+      keychain_password = "fixlens-ci-keychain"
+      keychain_path = File.expand_path("~/Library/Keychains/#{keychain_name}-db")
 
-    cert(
+      create_keychain(
+        name: keychain_name,
+        password: keychain_password,
+        default_keychain: true,
+        unlock: true,
+        timeout: 3600,
+        lock_when_sleeps: false
+      )
+    end
+
+    cert_options = {
       api_key: api_key,
       team_id: team_id,
       generate_apple_certs: true
-    )
+    }
+    if keychain_path && keychain_password
+      cert_options[:keychain_path] = keychain_path
+      cert_options[:keychain_password] = keychain_password
+    end
+    cert(**cert_options)
 
     sigh(
       api_key: api_key,
