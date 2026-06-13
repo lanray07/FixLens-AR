@@ -70,7 +70,7 @@ final class PDFReportService {
 
 private extension String {
     func height(constrainedTo width: CGFloat, font: UIFont) -> CGFloat {
-        let rect = boundingRect(
+        let rect = (self as NSString).boundingRect(
             with: CGSize(width: width, height: .greatestFiniteMagnitude),
             options: [.usesLineFragmentOrigin, .usesFontLeading],
             attributes: [.font: font],
