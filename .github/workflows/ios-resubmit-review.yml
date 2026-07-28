@@ -199,7 +199,11 @@ jobs:
             else
               images.each do |image|
                 puts "Deleting promotional image #{image.fetch("id")} for #{product_id}"
-                request(:delete, "/v1/subscriptionImages/#{image.fetch("id")}", token, ok: [204, 404])
+                delete_response = request(:delete, "/v1/subscriptionImages/#{image.fetch("id")}", token, ok: [204, 404, 409])
+                if delete_response&.dig("errors")
+                  details = delete_response.fetch("errors").map { |error| error["detail"] || error["title"] }.join("; ")
+                  warn "Promotional image #{image.fetch("id")} could not be deleted yet: #{details}"
+                end
               end
             end
           end
