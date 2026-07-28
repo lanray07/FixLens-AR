@@ -156,20 +156,24 @@ jobs:
           build_id = build.fetch("id")
           puts "Build: #{build_id} (#{BUILD_NUMBER})"
 
-          request(
-            :patch,
-            "/v1/builds/#{build_id}",
-            token,
-            body: {
-              data: {
-                type: "builds",
-                id: build_id,
-                attributes: {
-                  usesNonExemptEncryption: false
+          if build.dig("attributes", "usesNonExemptEncryption") == false
+            puts "Build export compliance is already set to non-exempt encryption: false"
+          else
+            request(
+              :patch,
+              "/v1/builds/#{build_id}",
+              token,
+              body: {
+                data: {
+                  type: "builds",
+                  id: build_id,
+                  attributes: {
+                    usesNonExemptEncryption: false
+                  }
                 }
               }
-            }
-          )
+            )
+          end
 
           subscriptions_response = request(
             :get,
