@@ -48,8 +48,12 @@ struct SettingsView: View {
             }
 
             Section {
-                SettingsRow(title: "Privacy Policy", subtitle: "Placeholder document", icon: "hand.raised")
-                SettingsRow(title: "Terms", subtitle: "Placeholder document", icon: "doc.plaintext")
+                Link(destination: LegalLinks.privacyPolicyURL) {
+                    SettingsRow(title: "Privacy Policy", subtitle: "How FixLens AR handles app data", icon: "hand.raised")
+                }
+                Link(destination: LegalLinks.termsOfUseURL) {
+                    SettingsRow(title: "Terms of Use (EULA)", subtitle: "Apple standard licensed application agreement", icon: "doc.plaintext")
+                }
                 SettingsRow(title: "Safety Disclaimer", subtitle: SafetyPolicy.educationalDisclaimer, icon: "exclamationmark.shield")
             } header: {
                 Text("Legal")
@@ -86,7 +90,7 @@ struct SettingsView: View {
         reports.forEach { modelContext.delete($0) }
         subscriptionStates.forEach { modelContext.delete($0) }
         try? modelContext.save()
-        subscriptionStore.activatePreviewPlan(.free)
+        subscriptionStore.resetLocalSubscriptionState()
     }
 }
 

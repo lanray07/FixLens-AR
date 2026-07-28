@@ -27,9 +27,13 @@ final class SubscriptionStore: ObservableObject {
         defer { isLoading = false }
 
         do {
+            lastErrorMessage = nil
             products = try await Product.products(for: Array(productIDs.keys))
+            if products.isEmpty {
+                lastErrorMessage = "Subscriptions are currently unavailable. Please try again later."
+            }
         } catch {
-            lastErrorMessage = "StoreKit products are using placeholders until products are configured in App Store Connect."
+            lastErrorMessage = "Subscriptions are currently unavailable. Please try again later."
             products = []
         }
     }
@@ -39,6 +43,7 @@ final class SubscriptionStore: ObservableObject {
         defer { isLoading = false }
 
         do {
+            lastErrorMessage = nil
             let result = try await product.purchase()
             switch result {
             case .success(let verification):
@@ -58,6 +63,23 @@ final class SubscriptionStore: ObservableObject {
         }
     }
 
+    func restorePurchases() async {
+        isLoading = true
+        defer { isLoading = false }
+
+        do {
+            lastErrorMessage = nil
+            try await AppStore.sync()
+            await refreshPurchasedProducts()
+
+            if activePlan == .free {
+                lastErrorMessage = "No active subscription was found for this Apple ID."
+            }
+        } catch {
+            lastErrorMessage = "Unable to restore purchases. \(error.localizedDescription)"
+        }
+    }
+
     func refreshPurchasedProducts() async {
         var detectedPlan: SubscriptionPlan = .free
 
@@ -69,7 +91,13 @@ final class SubscriptionStore: ObservableObject {
         activePlan = detectedPlan
     }
 
+    func resetLocalSubscriptionState() {
+        activePlan = .free
+    }
+
+#if DEBUG
     func activatePreviewPlan(_ plan: SubscriptionPlan) {
         activePlan = plan
     }
+#endif
 }

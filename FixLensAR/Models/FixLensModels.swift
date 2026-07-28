@@ -143,9 +143,15 @@ enum SubscriptionPlan: String, CaseIterable, Identifiable, Codable, Hashable {
     var pricePlaceholder: String {
         switch self {
         case .free: "Included"
-        case .proMonthly: "£9.99/mo"
-        case .proYearly: "£79.99/yr"
-        case .propertyProMonthly: "£24.99/mo"
+        case .proMonthly, .proYearly, .propertyProMonthly: "Price unavailable"
+        }
+    }
+
+    var subscriptionLength: String {
+        switch self {
+        case .free: "Included"
+        case .proMonthly, .propertyProMonthly: "Monthly subscription"
+        case .proYearly: "Yearly subscription"
         }
     }
 

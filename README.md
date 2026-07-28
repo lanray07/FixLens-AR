@@ -30,3 +30,8 @@ Required repository secrets:
 Run the workflow from GitHub Actions and keep the marketing version at `1.0` for the current App Store version. If no build number is supplied, the workflow uses the GitHub run number so each upload is unique.
 
 Safety posture: FixLens AR is informational only. It does not certify, replace qualified tradespeople, or instruct users to perform dangerous gas, electrical, high-voltage, or sealed-system repairs.
+
+## Legal URLs
+
+- Privacy Policy: https://github.com/lanray07/FixLens-AR/blob/main/PRIVACY_POLICY.md
+- Terms of Use (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/

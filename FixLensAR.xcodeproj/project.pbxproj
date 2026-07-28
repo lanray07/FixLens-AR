@@ -46,6 +46,7 @@
 		B00000000000000000000025 /* PaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000025 /* PaywallView.swift */; };
 		B00000000000000000000026 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000026 /* SettingsView.swift */; };
 		B00000000000000000000027 /* ApplianceDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000027 /* ApplianceDetailView.swift */; };
+		B0000000000000000000002A /* LegalLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0000000000000000000002A /* LegalLinks.swift */; };
 		B00000000000000000000029 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000029 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +58,7 @@
 		F00000000000000000000004 /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App/AppTheme.swift; sourceTree = "<group>"; };
 		F00000000000000000000005 /* FixLensModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models/FixLensModels.swift; sourceTree = "<group>"; };
 		F00000000000000000000006 /* SafetyPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources/SafetyPolicy.swift; sourceTree = "<group>"; };
+		F0000000000000000000002A /* LegalLinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources/LegalLinks.swift; sourceTree = "<group>"; };
 		F00000000000000000000007 /* AIModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/AIModels.swift; sourceTree = "<group>"; };
 		F00000000000000000000008 /* MockAIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/MockAIService.swift; sourceTree = "<group>"; };
 		F00000000000000000000009 /* RemoteAIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/RemoteAIService.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 				F00000000000000000000004 /* AppTheme.swift */,
 				F00000000000000000000005 /* FixLensModels.swift */,
 				F00000000000000000000006 /* SafetyPolicy.swift */,
+				F0000000000000000000002A /* LegalLinks.swift */,
 				F00000000000000000000007 /* AIModels.swift */,
 				F00000000000000000000008 /* MockAIService.swift */,
 				F00000000000000000000009 /* RemoteAIService.swift */,
@@ -244,6 +247,7 @@
 				B00000000000000000000004 /* AppTheme.swift in Sources */,
 				B00000000000000000000005 /* FixLensModels.swift in Sources */,
 				B00000000000000000000006 /* SafetyPolicy.swift in Sources */,
+				B0000000000000000000002A /* LegalLinks.swift in Sources */,
 				B00000000000000000000007 /* AIModels.swift in Sources */,
 				B00000000000000000000008 /* MockAIService.swift in Sources */,
 				B00000000000000000000009 /* RemoteAIService.swift in Sources */,
